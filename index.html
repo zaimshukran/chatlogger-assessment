@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  href="style.css">
+        <title>
+            Chat Logger Application
+        </title>
+    </head>
+
+    <body>
+        <!--Page content-->
+        <table>
+            <tr>
+                <td>
+                    Upload a log file (.txt)
+                </td>
+                <td>
+                    Results:
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="drag-area" ondrop="upload_file(event)" ondragover="return false" onclick="browseFile()">
+                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <header>(Drag and drop your file here)</header>
+                        <input type="file" name="file" id="file" accept=".txt" hidden>
+                    </div>
+                </td>
+                <td>
+                    <div class="result-area">
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <script src="chat.js"></script>
+    </body>
+</html>
